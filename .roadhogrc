@@ -1,0 +1,36 @@
+{
+  "entry": "src/index.js",
+  "disableCSSModules": false,
+  "publicPath": "/",
+  "theme": {
+    "@primary-color": "#1DA57A",
+    "@link-color": "#1DA57A",
+    "@border-radius-base": "2px",
+    "@font-size-base": "16px",
+    "@line-height-base": "1.2"
+  },
+  "autoprefixer": null,
+  "proxy": {
+    "/live": {
+          "target": "https://xiaohuoban.huanqiushuju.com/live/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/live" : "" }
+    },
+    "/api": {
+                "target": "http://v.huanqiushuju.com/api/",
+            "changeOrigin": true,
+            "pathRewrite": { "^/api" : "" }
+          }
+  },
+  "extraBabelPlugins": [
+    "transform-runtime",
+    ["import", { "libraryName": "antd", "style": false }]
+  ],
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  }
+}

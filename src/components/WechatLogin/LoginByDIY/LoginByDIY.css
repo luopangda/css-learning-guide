@@ -1,0 +1,148 @@
+.outerClass {
+    padding: 0 !important;
+}
+
+.contentClass {
+    max-width: 568px !important;
+}
+
+.overlayClass {
+    /*background:rgba(0, 0, 0, .99) !important;*/
+
+}
+
+
+.wechatLoginSec {
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.wechatLoginSec .inputSec {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wechatLoginSec .inputSec h4{
+  margin: 0;
+  color:#000;
+}
+
+.wechatLoginSec .inputSec h4 span{
+  margin: 0;
+  color:#000;
+}
+
+.wechatLoginSec .inputSec h4 span{
+  margin: 0;
+  color:#f0ad4e;
+}
+
+.wechatLoginSec .imageSec{
+  width: 100%;
+  flex: 1.5;
+  min-height: 420px;
+}
+.wechatLoginSec .loginBg {
+  background: url('../../../assets/default_bg_login.png') center center;
+}
+
+.wechatLoginSec .underSec {
+  margin: 20px 0 0;
+}
+
+
+.wechatLoginSec .underSec a {
+  text-decoration: none;
+  color: #6f4ab1;
+  font-size: 12px;
+}
+
+
+.checkbox {
+    font-size: 13px;
+    color:#888;
+    margin: 10px 0 20px;
+}
+
+
+.nlogin_iframe{
+    height: 400px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .outerClass {
+    padding: 0 !important;
+  }
+
+  .contentClass {
+    max-width: 568px !important;
+  }
+
+  .overlayClass {
+    /*background:rgba(0, 0, 0, .99) !important;*/
+
+  }
+
+
+  .wechatLoginSec {
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .wechatLoginSec .inputSec {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .wechatLoginSec .inputSec h4{
+    margin: 0;
+    color:#000;
+  }
+
+  .wechatLoginSec .inputSec h4 span{
+    margin: 0;
+    color:#000;
+  }
+
+  .wechatLoginSec .inputSec h4 span{
+    margin: 0;
+    color:#f0ad4e;
+  }
+
+  .wechatLoginSec .imageSec{
+    width: 100%;
+    flex: 1.5;
+    min-height: 420px;
+  }
+  .wechatLoginSec .loginBg {
+    background: #FFFFFF;
+  }
+
+  .wechatLoginSec .underSec {
+    margin: 20px 0 0;
+  }
+
+
+  .wechatLoginSec .underSec a {
+    text-decoration: none;
+    color: #6f4ab1;
+    font-size: 12px;
+  }
+
+
+  .checkbox {
+    font-size: 13px;
+    color:#888;
+    margin: 10px 0 20px;
+  }
+
+
+  .nlogin_iframe{
+    height: 400px;
+  }
+
+}

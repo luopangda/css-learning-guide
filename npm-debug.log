@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\software\\NODE\\node.exe',
+1 verbose cli   'F:\\software\\NODE\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle @~prestart: @
+6 silly lifecycle @~prestart: no script for prestart, continuing
+7 info lifecycle @~start: @
+8 verbose lifecycle @~start: unsafe-perm in lifecycle true
+9 verbose lifecycle @~start: PATH: F:\software\NODE\node_modules\npm\bin\node-gyp-bin;E:\work\play with code\LearningBySelf\node_modules\.bin;F:\software\Git\mingw64\bin;F:\software\Git\usr\bin;C:\Users\kurry\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;F:\software\JDK\bin;F:\software\JAVA\bin;F:\software\PYTHON;F:\software\NODE;F:\software\Git\usr\bin;F:\software\MYSQL 5.7\bin;F:\software\apache-maven-3.3.9\bin;F:\software\Git\usr\bin;F:\software\PUTTY;C:\Users\kurry\AppData\Roaming\npm;C:\Users\kurry\AppData\Local\Microsoft\WindowsApps;F:\software\qshell;F:\software\ffmpeg\bin
+10 verbose lifecycle @~start: CWD: E:\work\play with code\LearningBySelf
+11 silly lifecycle @~start: Args: [ '/d /s /c', 'roadhog server' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1022:11)
+12 verbose stack     at process.kill (internal/process.js:172:13)
+12 verbose stack     at process.listener (F:\software\NODE\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (F:\software\NODE\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (F:\software\NODE\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+13 verbose cwd E:\work\play with code\LearningBySelf
+14 error Windows_NT 10.0.14393
+15 error argv "F:\\software\\NODE\\node.exe" "F:\\software\\NODE\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error node v6.9.5
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
