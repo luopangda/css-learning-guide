@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  this is a tutorial that helps someone learns code on his own ! please join me.
+  This is a tutorial that helps someone learns code on his own ! please join me.
 </p>
 
 ## Getting Started
