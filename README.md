@@ -1,11 +1,11 @@
-# dva-example-user-dashboard
+# Learning By Myself
 
-详见[《12 步 30 分钟，完成用户管理的 CURD 应用 (react+dva+antd)》](https://github.com/sorrycc/blog/issues/18)。
+详见[个人博客](http://kurryluo.github.io)。
 
 ---
 
 <p align="center">
-  <img src="https://zos.alipayobjects.com/rmsportal/bmkNCEoluwGaeGjYjInf.png" />
+  this is a tutorial that helps someone learns code on his own ! please join me.
 </p>
 
 ## Getting Started
@@ -22,3 +22,5 @@ $ npm start
 ```
 
 If success, app will be open in your default browser automatically.
+
+thanks to [Ant Design](https://ant.design/docs/react/introduce-cn), [React](https://facebook.github.io/react/), [Dva](https://github.com/dvajs/dva)
