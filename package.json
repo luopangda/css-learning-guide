@@ -52,6 +52,7 @@
     "antd": "^3.25.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   }
 }
