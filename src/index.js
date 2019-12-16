@@ -7,7 +7,10 @@ import {
     Link
 } from "react-router-dom";
 import "./index.less";
-import from ""
+import AlignCenter from "./AlignCenter"
+import Bfc from "./BFC"
+import TwoColumns from "./TwoColumns"
+import ThreeColumns from "./ThreeColumns"
 
 // 加载图片
 const image = require('./image.jpg');
@@ -28,11 +31,14 @@ class App extends React.Component{
                         <Route path="/align-center">
                             <AlignCenter />
                         </Route>
-                        <Route path="/two-columns">
-                            <TwoColumns />
+                        <Route path="/bfc">
+                            <Bfc />
                         </Route>
                         <Route path="/three-columns">
                             <ThreeColumns />
+                        </Route>
+                        <Route path="/two-columns">
+                            <TwoColumns />
                         </Route>
                     </Switch>
                 </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.less"
-
-export default class AlignCenter extends React.Component{
+export default class TwoColumns extends React.Component{
     render(){
         return (
             <div>
