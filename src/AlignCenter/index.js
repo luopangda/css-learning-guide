@@ -6,7 +6,6 @@ export default class AlignCenter extends React.Component{
         return (
             <div>
                 <div className="first">第一栏</div>
-                <div className="second">第二栏</div>
             </div>
         )
     }

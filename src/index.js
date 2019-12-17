@@ -9,6 +9,7 @@ import {
 import "./index.less";
 import AlignCenter from "./AlignCenter"
 import Bfc from "./BFC"
+import OneColumn from "./OneColumn"
 import TwoColumns from "./TwoColumns"
 import ThreeColumns from "./ThreeColumns"
 
@@ -34,12 +35,16 @@ class App extends React.Component{
                         <Route path="/bfc">
                             <Bfc />
                         </Route>
-                        <Route path="/three-columns">
-                            <ThreeColumns />
+                        <Route path="/one-column">
+                            <OneColumn />
                         </Route>
                         <Route path="/two-columns">
                             <TwoColumns />
                         </Route>
+                        <Route path="/three-columns">
+                            <ThreeColumns />
+                        </Route>
+
                     </Switch>
                 </div>
             </Router>

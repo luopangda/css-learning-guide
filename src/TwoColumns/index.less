@@ -1,3 +1,4 @@
+/* 两列自适应布局：一列定宽，另一列自适应， 开始
 .first{
   background-color: yellow;
   width: 100px;
@@ -10,3 +11,27 @@
   height: 100px;
   color: white;
 }
+
+两列自适应布局：一列定宽，另一列自适应， 结束*/
+
+
+/* 两列自适应布局：一列由内容撑开，另一列自适应， 开始*/
+.parent {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.first{
+  background-color: yellow;
+  float: left;
+  height: 50px;
+}
+
+.second{
+  background-color: blue;
+  overflow: hidden; /* 成为一个BFC，起到隔离作用*/
+  height: 100px;
+  color: white;
+}
+
+/* 两列自适应布局：一列由内容撑开，另一列自适应， 结束*/

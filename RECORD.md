@@ -170,5 +170,118 @@ ReactDom.render( <App/>,
 
 # 2019-12-16 
 
-## 实现两栏布局
+## 实现单栏布局：header,content和footer等宽的单列布局
+  有两种实现：
+  - 对header,content,footer统一设置width：1000px;（屏幕小于1000px，出现滚动条）
+  - 对header,content,footer统一设置max-width：1000px;（屏幕小于1000px，显示内容和屏幕的宽度一致）
 
+```
+.header{
+  background-color: yellow;
+  //width: 1000px;/* 出现控制条*/
+  max-width: 1000px;
+  height: 100px;
+  margin:0 auto;/* 使得块居中*/
+}
+
+.content{
+  background-color: blue;
+  //width: 1000px;/* 出现控制条*/
+  max-width: 1000px;
+  height: 100px;
+  color: white;
+  margin:0 auto;
+}
+
+
+.footer{
+  background-color: red;
+  //width: 1000px;/* 出现控制条*/
+  max-width: 1000px;
+  height: 100px;
+  color: white;
+  margin:0 auto;
+}
+
+```
+
+
+## 实现两栏布局
+- 一列定宽，另一列自适应
+  ```
+  .first{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+  
+  .second{
+    background-color: blue;
+    height: 100px;
+    color: white;
+  }
+  ```
+- 一列由内容撑开，另一列自适应
+    ```
+  .parent {
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  .first{
+    background-color: yellow;
+    float: left;
+    height: 50px;
+  }
+
+  .second{
+    background-color: blue;
+    overflow: hidden; /* 成为一个BFC，起到隔离作用*/
+    height: 100px;
+    color: white;
+  }
+    ```
+    
+## 实现三栏布局：中间列自适应宽度，旁边两侧固定宽度
+  - 圣杯布局
+  ```
+  
+.parent {
+  padding-left: 220px;/*为左右栏腾出空间*/
+  padding-right: 220px;
+}
+
+
+.left {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background: red;
+  margin-left: -100%;
+  position: relative;
+  left: -220px;
+}
+
+
+.center {
+  float: left;
+  width: 100%;
+  height: 500px;
+  background: yellow;
+}
+
+.right {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background: blue;
+  margin-left: -200px;
+  position: relative;
+  right: -220px;
+}
+  ```
+  - 双飞翼:同样也是三栏布局，在圣杯布局基础上进一步优化，解决了圣杯布局错乱问题，实现了内容与布局的分离。而且任何一栏都可以是最高栏，不会出问题。
+  ```
+  
+  ```

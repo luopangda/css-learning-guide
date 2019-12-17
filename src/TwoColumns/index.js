@@ -3,8 +3,8 @@ import "./index.less"
 export default class TwoColumns extends React.Component{
     render(){
         return (
-            <div>
-                <div className="first">第一栏</div>
+            <div className="parent">
+                <div className="first">第一栏 任意增加字符串，内容自适应</div>
                 <div className="second">第二栏</div>
             </div>
         )
